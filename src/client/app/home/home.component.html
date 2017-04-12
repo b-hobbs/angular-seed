@@ -5,6 +5,12 @@
   <button type="submit">Add</button>
 </form>
 
+      <div class="col-xs-12 col-sm-6 example-col">
+        <p>DropDownList</p>
+        <kendo-dropdownlist [data]="listItems" [value]="'Basketball'">
+        </kendo-dropdownlist>
+      </div>
+
 <ul>
   <li *ngFor="let name of names">{{name}}</li>
 </ul>

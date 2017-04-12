@@ -42,6 +42,16 @@ export class ProjectConfig extends SeedConfig {
       //{'node_modules/immutable/dist/immutable.js': [ 'Map' ]},
     ];
 
+   this.SYSTEM_BUILDER_CONFIG.packageConfigPaths.push(join(this.PROJECT_ROOT, 'node_modules', '@progress', '*', 'package.json'));
+    this.SYSTEM_BUILDER_CONFIG.packageConfigPaths.push(join(this.PROJECT_ROOT, 'node_modules', '@telerik', '*', 'package.json'));
+
+    this.SYSTEM_CONFIG_DEV.packageConfigPaths = [
+       `/node_modules/*/package.json`,
+       `/node_modules/**/package.json`,
+       `/node_modules/@angular/*/package.json`,
+       `/node_modules/@progress/*/package.json`,
+       `/node_modules/@telerik/*/package.json`,
+     ];
     // Add packages (e.g. ng2-translate)
     // let additionalPackages: ExtendPackages[] = [{
     //   name: 'ng2-translate',

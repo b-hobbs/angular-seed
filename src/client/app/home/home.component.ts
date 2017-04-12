@@ -15,7 +15,9 @@ export class HomeComponent implements OnInit {
   newName: string = '';
   errorMessage: string;
   names: any[] = [];
+    public listItems: Array<string> = ["Baseball", "Basketball", "Cricket", "Field Hockey", "Football", "Table Tennis", "Tennis", "Volleyball"];
 
+    public value = ['Basketball', 'Cricket'];
   /**
    * Creates an instance of the HomeComponent with the injected
    * NameListService.
